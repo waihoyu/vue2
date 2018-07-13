@@ -32,6 +32,17 @@ filter 是否操作原数组： 不  返回结果： 过滤后的新数组  回�
 map  不操作原数组  返回新数组  回调函数中返回什么这一项是什么
 
 反引号  是es6 中的 模板字符串 遇到变量 ${} 取值
+includes
+
+find  返回找到的那一项，不会改变数组  回调函数中返回true 表示找到了，找到后停止循环  找不到 返回的是undefined 
+
+some  找到true
+ 
+every  找到false
+
+reduce 收敛函数  4 个参数 返回的是叠加后的 结果，回调函数返回觉的结果,要注意prev 出现undefined的情况
+[{price:30,count:2},{price:30,count:2},{price:30,count:2},{price:30,count:2}] 如何处理呢？  数组偏平化
+
 
 ```
 

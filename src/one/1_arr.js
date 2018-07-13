@@ -33,3 +33,12 @@ let newAry = [1,2,3,4,5].filter(function(item){
 })
 
 console.log(newAry);
+
+
+[1,2,3,4].reduce(function(prev,next,index,item){
+    console.log(arguments);
+});
+
+[1,2,3,4].reduce(function(prev,next,index,item){
+    console.log(arguments);
+},0);
